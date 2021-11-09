@@ -55,6 +55,8 @@ html {
   background-color: #0e5da1;
 }
 
-.nav-button {
+.nav-button,
+.icon,
+.text {
   color: #0e5da1;
 }
