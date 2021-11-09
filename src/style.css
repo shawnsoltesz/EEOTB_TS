@@ -30,10 +30,23 @@ html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url('/images/EEOTB.jpeg');
+  background-image: url('/images/tampabay.jpg');
   min-height: 50%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+.community,
+.about-button {
+  background-color: #f79e44;
+}
+
+.investors {
+  background-color: #0e5da1;
+}
+
+.nav-button {
+  color: #0e5da1;
 }
