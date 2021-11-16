@@ -143,13 +143,13 @@
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
       <div class="w3-display-left w3-text-white" style="padding: 48px">
         <span
-          class="w3-jumbo w3-hide-small"
-          style="text-shadow: 3px 3px 0 #444"
+          class="w3-jumbo w3-hide-small w3-text-black"
+          style="text-shadow: 1px 1px 0 #444"
         >
           <br /><br />
-          <h1 class="w3-center">We Will Revitalize Tampa Bay!</h1>
+          <h1 class="header w3-center">We Will Revitalize Tampa Bay!</h1>
 
-          <h2 style="text-shadow: 3px 3px 0 #444">
+          <h2 class="header" style="text-shadow: 1px 1px 0 #444">
             We listen to the innovators of the community and build solutions
             based on their growing needs.
           </h2></span
@@ -157,11 +157,11 @@
         <br />
         <span
           class="w3-xxlarge w3-hide-large w3-hide-medium"
-          style="text-shadow: 2px 2px 0 rgb(11, 11, 11)"
+          style="text-shadow: 1px 1px 0 rgb(11, 11, 11)"
         >
           <br /><br />
-          <h1 class="w3-center">We Will Revitalize Tampa Bay!</h1>
-          <h2 style="text-shadow: 3px 3px 0 #444">
+          <h1 class="header w3-center">We Will Revitalize Tampa Bay!</h1>
+          <h2 class="header" style="text-shadow: 1px 1px 0 #444">
             We listen to the innovators of the community and build solutions
             based on their growing needs.
           </h2>
@@ -187,7 +187,11 @@
     </div>
 
     <!-- Accomplishments Section -->
-    <div class="w3-container" style="padding: 128px 16px" id="accomplishments">
+    <div
+      class="accomplishments w3-container"
+      style="padding: 128px 16px"
+      id="accomplishments"
+    >
       <h2 class="w3-center">OUR ACCOMPLISHMENTS</h2>
       <p class="w3-left">
         Ambitious goals call for ambitious planning. In a very short period of
@@ -214,18 +218,16 @@
     </div>
 
     <!-- Founders Section -->
-    <div
-      class="w3-container w3-blue-grey"
-      style="padding: 128px 16px"
-      id="founders"
-    >
+    <div class="w3-container" style="padding: 128px 16px" id="founders">
       <h3 class="w3-center">MEET THE FOUNDERS</h3>
+
       <p class="w3-left w3-large">
         Entrepreneur Empowerment of Tampa Bay, Inc. is led by four accomplish
         professionals who have seen success individually and are now combining
         their strengths in a collaboration that will change the landscape of
         entrepreneur endeavors and revitalize Tampa Bay, FL.
       </p>
+
       <div class="w3-row-padding w3-grayscale-min" style="margin-top: 64px">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card-2 w3-white">
@@ -236,9 +238,9 @@
               height="225"
             />
             <div class="w3-container">
-              <h3>Dr Russ Barnes PhD, USAF Col (ret)</h3>
-              <p class="w3-opacity">Chief Executive Officers</p>
-              <p>
+              <h3>Dr Russ Barnes PhD, <br />USAF Col (ret)</h3>
+              <p class="w3-opacity">Chief Executive Officer</p>
+              <p class="w3-left w3-medium">
                 Col, US Air Force (ret) Dr Russ Barnes, PhD is Founder, Systro
                 Solutions, Strategy Development and Organization Design for
                 Small Business.
@@ -257,7 +259,7 @@
             <div class="w3-container">
               <h3>Frank Corsi</h3>
               <p class="w3-opacity">President</p>
-              <p>
+              <p class="w3-left w3-medium">
                 Frank Corsi is an MIT graduate, a sitting member of the W3C, and
                 entrepreneur with successful ventures that include Digital
                 Names.
@@ -276,7 +278,7 @@
             <div class="w3-container">
               <h3>Shenole Latimer</h3>
               <p class="w3-opacity">Vice President</p>
-              <p>
+              <p class="w3-left w3-medium">
                 Shenole Latimer's career has taken him from a successful
                 front-end web developer, to the CIO of a blockchain
                 infrastructure company.
@@ -295,7 +297,7 @@
             <div class="w3-container">
               <h3>Marisel Rosado</h3>
               <p class="w3-opacity">Vice President</p>
-              <p>
+              <p class="w3-left w3-medium">
                 Marisel Rosado's leadership within the Tampa Community includes
                 various community events she has organized and public fitness
                 initiatives.
@@ -307,10 +309,25 @@
     </div>
 
     <!-- Events Section -->
-    <div class="w3-container w3-white" style="padding: 128px 16px" id="events">
+    <!-- Tockify account: email - shawnjsoltesz@gmail, password - eeotb -->
+
+    <div
+      class="events w3-container w3-text-white"
+      style="padding: 128px 16px"
+      id="events"
+    >
       <h2 class="w3-center">EVENTS</h2>
       <p class="w3-center w3-large">We hope to see you at an event!</p>
-      <div class="w3-row-padding w3-grayscale-min" style="margin-top: 64px">
+      <div
+        data-tockify-component="calendar"
+        data-tockify-calendar="shawn.soltesz"
+      ></div>
+      <script
+        data-cfasync="false"
+        data-tockify-script="embed"
+        src="https://public.tockify.com/browser/embed.js"
+      ></script>
+      <!-- <div class="w3-row-padding w3-grayscale-min" style="margin-top: 64px">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card-4 w3-white">
             <img
@@ -419,18 +436,17 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Investors Section -->
     <div
-      class="investors w3-container w3-text-white"
+      class="investors w3-container"
       style="padding: 128px 16px"
       id="investors"
     >
       <div class="w3-row-padding">
         <div class="w3-col">
-          <h1>Investors</h1>
           <h2>Invest In The Revitalization Of Tampa Bay</h2>
           <p>
             There are over 8,000 businesses and tech professionals within our
@@ -456,34 +472,31 @@
     </div>
 
     <!-- Community Section -->
-    <div
-      class="community w3-container"
-      style="padding: 128px 8px"
-      id="partners"
-    >
+    <div class="community" style="padding: 128px 8px" id="partners">
       <h2 class="w3-center">OUR PARTNERS</h2>
-      <img
-        src="/src/images/volunteer.jpg"
-        alt="picture of volunteers standing in alley"
-        class="w3-image"
-      />
-      <ul>
-        <li>TNS Blockchain</li>
 
-        <li>SMARTstart</li>
-
-        <li>MFX Worldwide</li>
-
-        <li>World Wide Web Consortium (W3C)</li>
-
-        <li>MIT CSAIL</li>
-
-        <li>Hyde House Tampa</li>
-
-        <li>Centre Club Tampa</li>
-
-        <li>South Tampa Chamber of Commerce</li>
-      </ul>
+      <div class="flex-container">
+        <span>
+          <img
+            src="/src/images/volunteer.jpg"
+            alt="picture of volunteers standing in alley"
+            class="w3-image"
+          />
+        </span>
+        <span>
+          <ul>
+            <li>TNS Blockchain</li>
+            <li>SMARTstart</li>
+            <li>World Wide Web Consortium (W3C)</li>
+            <li>MIT CSAIL</li>
+            <li>South Tampa Chamber of Commerce</li>
+            <li>MFX Worldwide</li>
+            <li>Hyde House Tampa</li>
+            <li>Centre Club Tampa</li>
+            <li>Rose Bar Tampa</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="w3-content w3-white" style="padding: 128px 16px" id="sign-up">
@@ -526,35 +539,16 @@
             class="w3-input w3-border"
             type="text"
             id="phone"
-            required
             name="Phone Number"
-          /><br />
-          <div>
-            <label for="investment_amount"
-              >Investment Amount:&nbsp;&nbsp;</label
-            >
+          />
+          <label for="message">Message:</label>
 
-            <select name="investment_amount" id="investment_amount_select">
-              <option value="">--Please choose an option--</option>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
-          </div>
-          <br />
-          <div>
-            <label for="accredited_investor"
-              >Accredited Investor:&nbsp;&nbsp;</label
-            >
+          <textarea
+            class="w3-input w3-border"
+            id="message"
+            name="Message"
+          ></textarea>
 
-            <select name="accredited_investor" id="accredited_investor_select">
-              <option value="">--Please choose an option--</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </div>
-          <br />
           <p>
             <button class="contact-send w3-button w3-text-white" type="submit">
               SIGN-UP
@@ -565,14 +559,14 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-orange w3-padding-32">
+    <footer class="footer w3-center w3-padding-32">
       <p>
         Powered by
         <a
           href="https://www.w3schools.com/w3css/default.asp"
           title="W3.CSS"
           target="_blank"
-          class="w3-hover-text-green"
+          class="w3-hover-text-blue"
           >w3.css</a
         >
       </p>

@@ -46,13 +46,18 @@ html {
   padding: 16px;
 }
 
+/* .header {
+  color: #0e5da1;
+} */
+
 .community,
-.about-button {
+.accomplishments {
   background-color: #f79e44;
 }
 
-.investors,
-.contact-send {
+.events,
+.contact-send,
+.footer {
   background-color: #0e5da1;
 }
 
@@ -61,3 +66,13 @@ html {
 .text {
   color: #0e5da1;
 }
+.flex-container {
+  display: flex;
+}
+
+/* .flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+} */
