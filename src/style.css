@@ -46,9 +46,10 @@ html {
   padding: 16px;
 }
 
-/* .header {
-  color: #0e5da1;
-} */
+.header {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: rgba(140, 155, 240, 0.105);
+}
 
 .community,
 .accomplishments {
