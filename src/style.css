@@ -32,6 +32,7 @@ html {
   background-size: cover;
   background-image: url('/src/images/tampabay.jpg');
   min-height: 50%;
+  opacity: 0.85;
 }
 
 /* .bgimg-1 {

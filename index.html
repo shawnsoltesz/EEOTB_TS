@@ -61,20 +61,23 @@
             w3-right w3-margin-top w3-cell-middle w3-hide-small w3-hide-medium
           "
         >
-          <a href="#about" class="nav-button w3-bar-item w3-button"
-            ><i class="fa fa-info-circle"></i> ABOUT</a
+          <a href="#about" class="nav-button w3-bar-item w3-button"> ABOUT</a>
+          <a href="#accomplishments" class="nav-button w3-bar-item w3-button">
+            ACCOMPLISHMENTS</a
           >
-          <a href="#events" class="nav-button w3-bar-item w3-button"
-            ><i class="fa fa-calendar"></i> EVENTS</a
+          <a href="#founders" class="nav-button w3-bar-item w3-button">
+            FOUNDERS</a
           >
-          <a href="#community" class="nav-button w3-bar-item w3-button"
-            ><i class="fa fa-users"></i> COMMUNITY</a
+          <a href="#events" class="nav-button w3-bar-item w3-button"> EVENTS</a>
+
+          <a href="#investors" class="nav-button w3-bar-item w3-button">
+            INVESTORS</a
           >
-          <a href="#investors" class="nav-button w3-bar-item w3-button"
-            ><i class="fa fa-usd"></i> INVESTORS</a
+          <a href="#partners" class="nav-button w3-bar-item w3-button">
+            PARTNERS</a
           >
-          <a href="#contact" class="nav-button w3-bar-item w3-button"
-            ><i class="fa fa-envelope"></i> CONTACT</a
+          <a href="#sign-up" class="nav-button w3-bar-item w3-button">
+            INVESTOR SIGN-UP</a
           >
         </div>
 
@@ -112,17 +115,27 @@
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
         >ABOUT</a
       >
+      <a
+        href="#accomplishments"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        >ACCOMPLISHMENTS</a
+      >
+      <a href="#founders" onclick="w3_close()" class="w3-bar-item w3-button"
+        >FOUNDERS</a
+      >
       <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button"
         >EVENTS</a
       >
-      <a href="#community" onclick="w3_close()" class="w3-bar-item w3-button"
-        >COMMUNITY</a
-      >
+
       <a href="#investors" onclick="w3_close()" class="w3-bar-item w3-button"
         >INVESTORS</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
-        >CONTACT</a
+      <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button"
+        >PARTNERS</a
+      >
+      <a href="#sign-up" onclick="w3_close()" class="w3-bar-item w3-button"
+        >INVESTOR SIGN-UP</a
       >
     </nav>
 
@@ -134,7 +147,7 @@
           style="text-shadow: 3px 3px 0 #444"
         >
           <br /><br />
-          <h1>We Will Revitalize Tampa Bay!</h1>
+          <h1 class="w3-center">We Will Revitalize Tampa Bay!</h1>
 
           <h2 style="text-shadow: 3px 3px 0 #444">
             We listen to the innovators of the community and build solutions
@@ -147,7 +160,7 @@
           style="text-shadow: 2px 2px 0 rgb(11, 11, 11)"
         >
           <br /><br />
-          <h1>We Will Revitalize Tampa Bay!</h1>
+          <h1 class="w3-center">We Will Revitalize Tampa Bay!</h1>
           <h2 style="text-shadow: 3px 3px 0 #444">
             We listen to the innovators of the community and build solutions
             based on their growing needs.
@@ -446,7 +459,7 @@
     <div
       class="community w3-container"
       style="padding: 128px 8px"
-      id="community"
+      id="partners"
     >
       <h2 class="w3-center">OUR PARTNERS</h2>
       <img
@@ -473,67 +486,75 @@
       </ul>
     </div>
 
-    <div class="w3-content w3-white" style="padding: 128px 16px" id="contact">
+    <div class="w3-content w3-white" style="padding: 128px 16px" id="sign-up">
       <h3 class="w3-center">INVESTOR SIGN-UP</h3>
 
       <div style="margin-top: 48px">
         <form action="/src/components/thankyou.html">
-          <p>
-            First Name:
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder=""
-              required
-              name="First Name"
-            />
-          </p>
-          <p>
-            Last Name:
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder=""
-              required
-              name="Last Name"
-            />
-          </p>
-          <p>
-            Email:
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder=""
-              required
-              name="Email"
-            />
-          </p>
-          <p>
-            Phone Number:
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder=""
-              required
-              name="Phone Number"
-            />
-          </p>
-          <p>Investment Amount:</p>
+          <label for="first_name">First Name:</label>
+          <input
+            class="w3-input w3-border"
+            type="text"
+            id="first_name"
+            required
+            name="First Name"
+          />
 
-          <select name="investor-sign-up" id="investor_sign-up">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
+          <label for="last_name">Last Name:</label>
 
-          <p>Accredited Investor:</p>
+          <input
+            class="w3-input w3-border"
+            type="text"
+            id="last_name"
+            required
+            name="Last Name"
+          />
 
-          <select name="accredited_investor" id="accredited_investor">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
+          <label for="email">Email:</label>
 
+          <input
+            class="w3-input w3-border"
+            type="text"
+            id="email"
+            required
+            name="Email"
+          />
+
+          <label for="phone">Phone Number:</label>
+
+          <input
+            class="w3-input w3-border"
+            type="text"
+            id="phone"
+            required
+            name="Phone Number"
+          /><br />
+          <div>
+            <label for="investment_amount"
+              >Investment Amount:&nbsp;&nbsp;</label
+            >
+
+            <select name="investment_amount" id="investment_amount_select">
+              <option value="">--Please choose an option--</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="accredited_investor"
+              >Accredited Investor:&nbsp;&nbsp;</label
+            >
+
+            <select name="accredited_investor" id="accredited_investor_select">
+              <option value="">--Please choose an option--</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <br />
           <p>
             <button class="contact-send w3-button w3-text-white" type="submit">
               SIGN-UP
