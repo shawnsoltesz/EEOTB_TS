@@ -116,67 +116,47 @@
     </div>
 
     <!-- Hamburger menu - sidebar -->
+
     <nav
       class="
-        w3-sidebar
-        w3-bar-block
-        w3-blue-grey
-        w3-card
-        w3-animate-top
-        w3-hide-large
+        w3-sidebar w3-bar-block w3-white w3-card w3-animate-top w3-hide-large
       "
       style="display: none; width: 200px; right: 0"
       id="mySidebar"
     >
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button w3-large w3-padding-16"
-        >Close ×</a
-      >
-      <a
-        href="/index.html/#about"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >ABOUT</a
-      >
-      <a
-        href="/index.html/#accomplishments"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >ACCOMPLISHMENTS</a
-      >
-      <a
-        href="/index.html/#founders"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >FOUNDERS</a
-      >
-      <a
-        href="/index.html/#events"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >EVENTS</a
-      >
+      <div class="hamburger">
+        <a
+          href="javascript:void(0)"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-large w3-padding-16"
+          >Close ×</a
+        >
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+          >ABOUT</a
+        >
+        <a
+          href="#accomplishments"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button"
+          >ACCOMPLISHMENTS</a
+        >
+        <a href="#founders" onclick="w3_close()" class="w3-bar-item w3-button"
+          >FOUNDERS</a
+        >
+        <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button"
+          >EVENTS</a
+        >
 
-      <a
-        href="/index.html/#investors"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >INVESTORS</a
-      >
-      <a
-        href="/index.html/#partners"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >PARTNERS</a
-      >
-      <a
-        href="/index.html/#sign-up"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button"
-        >INVESTOR SIGN-UP</a
-      >
+        <a href="#investors" onclick="w3_close()" class="w3-bar-item w3-button"
+          >INVESTORS</a
+        >
+        <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button"
+          >PARTNERS</a
+        >
+        <a href="#sign-up" onclick="w3_close()" class="w3-bar-item w3-button"
+          >INVESTOR SIGN-UP</a
+        >
+      </div>
     </nav>
 
     <!-- Thank You message -->
@@ -192,17 +172,8 @@
     </div>
   </body>
   <!-- Footer -->
-  <footer class="footer w3-text-white w3-center w3-padding-32">
-    <p>
-      Powered by
-      <a
-        href="https://www.w3schools.com/w3css/default.asp"
-        title="W3.CSS"
-        target="_blank"
-        class="w3-hover-text-blue"
-        >w3.css</a
-      >
-    </p>
+  <footer class="footer w3-center w3-text-white w3-padding-32">
+    <p>&copy2021 Entrepreneur Empowerment of Tampa Bay</p>
   </footer>
   <script>
     // Toggle between showing and hiding the sidebar when clicking the menu icon
