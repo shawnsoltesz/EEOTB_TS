@@ -87,8 +87,8 @@
           <a href="#partners" class="nav-button w3-bar-item w3-button">
             PARTNERS</a
           >
-          <a href="#sign-up" class="nav-button w3-bar-item w3-button">
-            INVESTOR SIGN-UP</a
+          <a href="#contact" class="nav-button w3-bar-item w3-button">
+            CONTACT US</a
           >
         </div>
 
@@ -141,8 +141,8 @@
         <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button"
           >PARTNERS</a
         >
-        <a href="#sign-up" onclick="w3_close()" class="w3-bar-item w3-button"
-          >INVESTOR SIGN-UP</a
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+          >CONTACT</a
         >
       </div>
     </nav>
@@ -157,7 +157,7 @@
           <br /><br />
           <h1 class="header w3-center">We Will Revitalize Tampa Bay!</h1>
 
-          <h2 class="header" style="text-shadow: 2px 2px 0 #f79e44">
+          <h2 class="header w3-center" style="text-shadow: 2px 2px 0 #f79e44">
             We listen to the innovators of the community and build solutions
             based on their growing needs.
           </h2></span
@@ -169,7 +169,7 @@
         >
           <br /><br />
           <h1 class="header w3-center">We Will Revitalize Tampa Bay!</h1>
-          <h2 class="header" style="text-shadow: 1px 1px 0 #f79e44">
+          <h2 class="header w3-center" style="text-shadow: 1px 1px 0 #f79e44">
             We listen to the innovators of the community and build solutions
             based on their growing needs.
           </h2>
@@ -181,7 +181,7 @@
     <div class="w3-container" style="padding: 128px 16px" id="about">
       <h2 class="w3-center">ABOUT US</h2>
       <p class="w3-center w3-large">Tampa Bay's Problem Worth Solving</p>
-      <div class="w3-left w3-large">
+      <div class="w3-center w3-large">
         <p>
           The entrepreneurs of Tampa Bay have a lack of nurturing assistance
           available to them. There is also a lack of qualified talent to help
@@ -200,13 +200,13 @@
     >
       <h2 class="w3-center">OUR ACCOMPLISHMENTS</h2>
 
-      <p class="w3-left w3-large">
+      <p class="w3-center w3-large">
         Ambitious goals call for ambitious planning. In a very short period of
         time, Entrepreneur Empowerment of Tampa Bay, Inc. has accomplished
         setting up infrastructure and events that include:
       </p>
 
-      <ul class="w3-left w3-large">
+      <ul class="w3-center w3-large">
         <li>
           Established an office within the heart of the Tampa Bay Community
         </li>
@@ -228,7 +228,7 @@
     <div class="w3-container" style="padding: 128px 16px" id="founders">
       <h3 class="w3-center">MEET THE FOUNDERS</h3>
 
-      <p class="w3-left w3-large">
+      <p class="w3-center w3-large">
         Entrepreneur Empowerment of Tampa Bay, Inc. is led by four accomplish
         professionals who have seen success individually and are now combining
         their strengths in a collaboration that will change the landscape of
@@ -343,7 +343,7 @@
       id="investors"
     >
       <div class="w3-row-padding">
-        <div class="w3-col">
+        <div class="w3-col w3-center">
           <h2>Invest In The Revitalization Of Tampa Bay</h2>
           <p class="w3-large">
             There are over 8,000 businesses and tech professionals within our
@@ -472,36 +472,40 @@
       </div>
     </div>
 
-    <div class="w3-content w3-white" style="padding: 128px 16px" id="sign-up">
-      <h3 class="w3-center">INVESTOR SIGN-UP</h3>
+    <div class="w3-content w3-white" style="padding: 128px 16px" id="contact">
+      <h3 class="w3-center">CONTACT US</h3>
 
       <div class="w3-mobile" style="margin-top: 48px">
         <form action="/src/components/thankyou.html">
-          <label for="first_name">First Name:</label>
+          <p>All fields marked with * are required</p>
+          <label for="first_name">First Name:*</label>
           <input
             class="w3-input w3-border"
             type="text"
             id="first_name"
+            aria-required="”true”"
             required
             name="First Name"
           />
 
-          <label for="last_name">Last Name:</label>
+          <label for="last_name">Last Name:*</label>
 
           <input
             class="w3-input w3-border"
             type="text"
             id="last_name"
+            aria-required="”true”"
             required
             name="Last Name"
           />
 
-          <label for="email">Email:</label>
+          <label for="email">Email:*</label>
 
           <input
             class="w3-input w3-border"
             type="text"
             id="email"
+            aria-required="”true”"
             required
             name="Email"
           />
