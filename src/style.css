@@ -113,6 +113,20 @@ html {
   margin-top: 1.5rem;
 }
 
-/* .bullets {
-  width: 344px;
-} */
+.bullets {
+  width: 500px;
+  text-align: left;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .bullets {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bullets {
+    width: 328px;
+  }
+}
