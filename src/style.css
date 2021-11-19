@@ -57,6 +57,11 @@ html {
   background-color: #0e5da1;
 }
 
+.tokify {
+  max-width: 1017px;
+  margin: auto;
+}
+
 .nav-button,
 .icon,
 .text,
@@ -95,3 +100,14 @@ html {
 .overlay_text {
   padding-top: 5rem;
 }
+
+.page_img {
+  max-width: 1017px;
+  height: 75%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+/* .bullets {
+  width: 344px;
+} */
