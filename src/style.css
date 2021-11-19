@@ -91,3 +91,7 @@ html {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 800;
 }
+
+.overlay_text {
+  padding-top: 5rem;
+}
