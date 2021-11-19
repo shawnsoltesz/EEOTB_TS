@@ -504,7 +504,7 @@
       <h3 class="w3-center">CONTACT US</h3>
 
       <div class="w3-mobile" style="margin-top: 48px">
-        <form action="/thankyou.html">
+        <form action="/thankyou.html" method="get">
           <p>
             All fields marked with <span class="required">*</span> are required
           </p>
@@ -566,7 +566,11 @@
           ></textarea>
 
           <p>
-            <button class="contact-send w3-button w3-text-white" type="submit">
+            <button
+              class="contact-send w3-button w3-text-white"
+              type="submit"
+              formaction="/thankyou.html"
+            >
               SIGN-UP
             </button>
           </p>
