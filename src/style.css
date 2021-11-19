@@ -32,7 +32,7 @@ html {
   background-size: cover;
   background-image: url('/src/images/tampabay_evening.jpg');
   min-height: 75%;
-  opacity: 0.85;
+  /* opacity: 0.85; */
 }
 
 /* .bgimg-1 {
@@ -44,12 +44,6 @@ html {
 
 .w3-bar .w3-button {
   padding: 16px;
-}
-
-.header {
-  font-family: 'Noto Sans', sans-serif;
-  color: #000000;
-  font-weight: 800;
 }
 
 .community,
@@ -77,4 +71,23 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* z-index: 2; */
+}
+
+.header {
+  color: white;
+  padding: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
 }
