@@ -119,6 +119,16 @@ html {
   margin: auto;
 }
 
+.custom-label {
+  display: flex;
+}
+
+.required {
+  color: #e60000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 800px) {
   .bullets {
     width: 400px;

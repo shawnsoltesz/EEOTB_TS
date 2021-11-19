@@ -505,8 +505,13 @@
 
       <div class="w3-mobile" style="margin-top: 48px">
         <form action="/src/components/thankyou.html">
-          <p>All fields marked with * are required</p>
-          <label for="first_name">First Name:*</label>
+          <p>
+            All fields marked with <span class="required">*</span> are required
+          </p>
+          <div class="custom_label">
+            <label for="first_name">First Name:</label
+            ><span class="required">*</span>
+          </div>
           <input
             class="w3-input w3-border"
             type="text"
@@ -516,7 +521,10 @@
             name="First Name"
           />
 
-          <label for="last_name">Last Name:*</label>
+          <div class="custom_label">
+            <label for="first_name">Last Name:</label
+            ><span class="required">*</span>
+          </div>
 
           <input
             class="w3-input w3-border"
@@ -527,7 +535,10 @@
             name="Last Name"
           />
 
-          <label for="email">Email:*</label>
+          <div class="custom_label">
+            <label for="first_name">Email:</label
+            ><span class="required">*</span>
+          </div>
 
           <input
             class="w3-input w3-border"
