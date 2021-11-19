@@ -65,7 +65,8 @@ html {
 .nav-button,
 .icon,
 .text,
-.hamburger {
+.hamburger,
+.bars {
   color: #0e5da1;
 }
 .flex-container {
@@ -103,9 +104,13 @@ html {
 
 .page_img {
   max-width: 1017px;
-  height: 75%;
+  height: 50%;
   margin: auto;
   margin-top: 2rem;
+}
+
+.nav-menu {
+  margin-top: 1.5rem;
 }
 
 /* .bullets {
