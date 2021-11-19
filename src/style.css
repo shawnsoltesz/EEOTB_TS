@@ -1,5 +1,9 @@
 :root {
   font: 16px / 1 sans-serif;
+  --eeotb-blue: #0e5da1;
+  --eeotb-orange: #f79e44;
+  --nav-background: white;
+  --required: #e60000;
 }
 
 html {
@@ -23,62 +27,44 @@ h6 {
 body,
 html {
   height: 100%;
-  /* line-height: 1.8; */
 }
 
-/* Full height image header */
+/* Hero image */
 .bgimg-1 {
   background-position: center;
   background-size: cover;
   background-image: url('/src/images/tampabay_evening.jpg');
   min-height: 75%;
-  /* opacity: 0.85; */
 }
-
-/* .bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url('/images/eeotb.jpeg');
-  min-height: 50%;
-} */
 
 .w3-bar .w3-button {
   padding: 16px;
 }
 
+/* Background color of page elements */
 .community,
 .accomplishments {
-  background-color: #f79e44;
+  background-color: var(--eeotb-orange);
 }
 
 .events,
 .contact-send,
 .footer {
-  background-color: #0e5da1;
+  background-color: var(--eeotb-blue);
 }
 
-.tokify {
-  max-width: 985px;
-  margin: auto;
-}
+/* Blue elements color */
 
 .nav-button,
 .icon,
 .text,
 .hamburger,
 .bars {
-  color: #0e5da1;
-}
-.flex-container {
-  display: flex;
+  color: var(--eeotb-blue);
 }
 
-.partner-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 1017px;
+.nav-menu {
+  margin-top: 1.5rem;
 }
 
 #overlay {
@@ -90,11 +76,10 @@ html {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  /* z-index: 2; */
 }
 
 .header {
-  color: white;
+  color: var(--nav-background);
   padding: 2rem;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 800;
@@ -111,14 +96,23 @@ html {
   margin-top: 2rem;
 }
 
-.nav-menu {
-  margin-top: 1.5rem;
-}
-
 .bullets {
   width: 600px;
   text-align: left;
   margin: auto;
+}
+
+.tokify {
+  max-width: 985px;
+  margin: auto;
+}
+
+.partner-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 1017px;
 }
 
 .custom-label {
@@ -126,7 +120,7 @@ html {
 }
 
 .required {
-  color: #e60000;
+  color: var(--required);
   font-size: 16px;
   font-weight: 700;
 }
