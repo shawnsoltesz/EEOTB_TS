@@ -19,3 +19,4 @@ export default defineConfig({
   plugins: [checker({ typescript: true })],
   // Add a build option to tell the build to include all the html files above
   build: { rollupOptions: { input: inputOptions } },
+})
